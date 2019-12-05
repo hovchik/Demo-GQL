@@ -18,8 +18,8 @@ namespace RealEstate.API.Controllers
         {
             _schema = schema;
             _documentExecuter = documentExecuter;
-        }
 
+        }
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] GraphQLQuery query)
         {
@@ -37,7 +37,7 @@ namespace RealEstate.API.Controllers
             };
 
             var result = await _documentExecuter
-                .ExecuteAsync(executionOptions);
+                .ExecuteAsync(executionOptions).ConfigureAwait(false);
 
             if (result.Errors?.Count > 0)
             {

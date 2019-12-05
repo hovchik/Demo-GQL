@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RealEstate.API.Models;
 using RealEstate.API.Mutations;
 using RealEstate.API.Queries;
 using RealEstate.API.Schema;
